@@ -13,7 +13,7 @@ public class SpigotJoinListener implements Listener {
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
         boolean isBedrockPlayer = playerChecker.isBedrockPlayer(event.getPlayer().getUniqueId());
-        if (!isBedrockPlayer) {
+        if (isBedrockPlayer) {
             FloodgatePlayer player = FloodgateAPI.getPlayer(event.getPlayer().getUniqueId());
             event.getPlayer().setDisplayName(player.getUsername());
         }
