@@ -16,7 +16,6 @@ public class NamerListener implements Listener {
             FloodgatePlayer player = FloodgateAPI.getPlayer(event.getPlayer().getUniqueId());
             event.getPlayer().setDisplayName(player.getUsername());
             event.getPlayer().setPlayerListName(player.getUsername());
-            FloodNamer.plugin.getLogger().info("Geyser/Floodgate Username has been changed into -> "+player.getUsername());
         }
     }
 }
