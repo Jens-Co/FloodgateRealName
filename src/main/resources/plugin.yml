@@ -1,5 +1,5 @@
 name: FloodgateRealName
-main: com.alysaa.geysernickname.NickNamer
+main: com.alysaa.floodname.FloodNamer
 version: 1.0
 api-version: 1.15
 depend: [Geyser-Spigot,floodgate-bukkit,Essentials]
